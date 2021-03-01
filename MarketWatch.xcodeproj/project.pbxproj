@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33501418CB1315F6C723FA2D /* Pods_MarketWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1401ABF2DFA5EA190A89A473 /* Pods_MarketWatch.framework */; };
+		5F8372A825ECC833008E6C8C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8372A725ECC833008E6C8C /* UIViewController.swift */; };
+		5F8372B025ECE495008E6C8C /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8372AF25ECE495008E6C8C /* CommonFunctions.swift */; };
+		5F89B3F725EB80A7009D3064 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B3F625EB80A7009D3064 /* WatchListTableViewCell.swift */; };
+		5F89B3FC25EB82DA009D3064 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B3FB25EB82DA009D3064 /* UILabel.swift */; };
+		5F89B40125EBA997009D3064 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B40025EBA997009D3064 /* BaseViewController.swift */; };
+		5F89B40625EBAA36009D3064 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B40525EBAA36009D3064 /* Constants.swift */; };
+		5F89B41E25EBF4CC009D3064 /* MarketWatchSpark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B41825EBF4CB009D3064 /* MarketWatchSpark.swift */; };
+		5F89B41F25EBF4CC009D3064 /* MarketWatchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B41925EBF4CB009D3064 /* MarketWatchResponse.swift */; };
+		5F89B42025EBF4CC009D3064 /* MarketWatchMarketSummaryAndSparkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B41A25EBF4CB009D3064 /* MarketWatchMarketSummaryAndSparkResponse.swift */; };
+		5F89B42125EBF4CC009D3064 /* MarketWatchRegularMarketPreviousClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B41B25EBF4CB009D3064 /* MarketWatchRegularMarketPreviousClose.swift */; };
+		5F89B42225EBF4CC009D3064 /* MarketWatchRegularMarketTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B41C25EBF4CB009D3064 /* MarketWatchRegularMarketTime.swift */; };
+		5F89B42325EBF4CC009D3064 /* MarketWatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89B41D25EBF4CB009D3064 /* MarketWatchResult.swift */; };
+		5FBAB27125EA630600BA6422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB27025EA630600BA6422 /* AppDelegate.swift */; };
+		5FBAB27325EA630600BA6422 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB27225EA630600BA6422 /* SceneDelegate.swift */; };
+		5FBAB27525EA630600BA6422 /* WatchlistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB27425EA630600BA6422 /* WatchlistController.swift */; };
+		5FBAB27825EA630600BA6422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBAB27625EA630600BA6422 /* Main.storyboard */; };
+		5FBAB27B25EA630600BA6422 /* MarketWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB27925EA630600BA6422 /* MarketWatch.xcdatamodeld */; };
+		5FBAB27D25EA630700BA6422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBAB27C25EA630700BA6422 /* Assets.xcassets */; };
+		5FBAB28025EA630700BA6422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBAB27E25EA630700BA6422 /* LaunchScreen.storyboard */; };
+		5FBAB28B25EA630700BA6422 /* MarketWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB28A25EA630700BA6422 /* MarketWatchTests.swift */; };
+		5FBAB29625EA630700BA6422 /* MarketWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB29525EA630700BA6422 /* MarketWatchUITests.swift */; };
+		5FBAB2AF25EA644000BA6422 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB2AE25EA644000BA6422 /* Enums.swift */; };
+		5FBAB2B425EA649E00BA6422 /* MWAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB2B325EA649E00BA6422 /* MWAPIClient.swift */; };
+		5FBAB2BA25EA65C500BA6422 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5FBAB2B925EA65C500BA6422 /* Alamofire */; };
+		5FBAB2C525EA6B5A00BA6422 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB2C425EA6B5A00BA6422 /* UIColor.swift */; };
+		BE63F9D7D158A66530C7E8AC /* Pods_MarketWatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04291D0EBED2ECD60DB64EF /* Pods_MarketWatchTests.framework */; };
+		EFA658210C412F8BC1060076 /* Pods_MarketWatch_MarketWatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85621684B8399A5B644DC383 /* Pods_MarketWatch_MarketWatchUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FBAB28725EA630700BA6422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FBAB26525EA630600BA6422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FBAB26C25EA630600BA6422;
+			remoteInfo = MarketWatch;
+		};
+		5FBAB29225EA630700BA6422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FBAB26525EA630600BA6422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FBAB26C25EA630600BA6422;
+			remoteInfo = MarketWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1401ABF2DFA5EA190A89A473 /* Pods_MarketWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D813B72435574FFFFD3DBB /* Pods-MarketWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketWatch.release.xcconfig"; path = "Target Support Files/Pods-MarketWatch/Pods-MarketWatch.release.xcconfig"; sourceTree = "<group>"; };
+		40B211437BFCA695E5D9C2CE /* Pods-MarketWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketWatch.debug.xcconfig"; path = "Target Support Files/Pods-MarketWatch/Pods-MarketWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		5F8372A725ECC833008E6C8C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5F8372AF25ECE495008E6C8C /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		5F89B3F625EB80A7009D3064 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
+		5F89B3FB25EB82DA009D3064 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		5F89B40025EBA997009D3064 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5F89B40525EBAA36009D3064 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5F89B41825EBF4CB009D3064 /* MarketWatchSpark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketWatchSpark.swift; sourceTree = "<group>"; };
+		5F89B41925EBF4CB009D3064 /* MarketWatchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketWatchResponse.swift; sourceTree = "<group>"; };
+		5F89B41A25EBF4CB009D3064 /* MarketWatchMarketSummaryAndSparkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketWatchMarketSummaryAndSparkResponse.swift; sourceTree = "<group>"; };
+		5F89B41B25EBF4CB009D3064 /* MarketWatchRegularMarketPreviousClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketWatchRegularMarketPreviousClose.swift; sourceTree = "<group>"; };
+		5F89B41C25EBF4CB009D3064 /* MarketWatchRegularMarketTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketWatchRegularMarketTime.swift; sourceTree = "<group>"; };
+		5F89B41D25EBF4CB009D3064 /* MarketWatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketWatchResult.swift; sourceTree = "<group>"; };
+		5FBAB26D25EA630600BA6422 /* MarketWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBAB27025EA630600BA6422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FBAB27225EA630600BA6422 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5FBAB27425EA630600BA6422 /* WatchlistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistController.swift; sourceTree = "<group>"; };
+		5FBAB27725EA630600BA6422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FBAB27A25EA630600BA6422 /* MarketWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarketWatch.xcdatamodel; sourceTree = "<group>"; };
+		5FBAB27C25EA630700BA6422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FBAB27F25EA630700BA6422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FBAB28125EA630700BA6422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBAB28625EA630700BA6422 /* MarketWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBAB28A25EA630700BA6422 /* MarketWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketWatchTests.swift; sourceTree = "<group>"; };
+		5FBAB28C25EA630700BA6422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBAB29125EA630700BA6422 /* MarketWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBAB29525EA630700BA6422 /* MarketWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketWatchUITests.swift; sourceTree = "<group>"; };
+		5FBAB29725EA630700BA6422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBAB2AE25EA644000BA6422 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5FBAB2B325EA649E00BA6422 /* MWAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWAPIClient.swift; sourceTree = "<group>"; };
+		5FBAB2C425EA6B5A00BA6422 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		85621684B8399A5B644DC383 /* Pods_MarketWatch_MarketWatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketWatch_MarketWatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF288FFC371FD27B81A1011 /* Pods-MarketWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketWatchTests.debug.xcconfig"; path = "Target Support Files/Pods-MarketWatchTests/Pods-MarketWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		936A90421F9470DC893F2F75 /* Pods-MarketWatch-MarketWatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketWatch-MarketWatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarketWatch-MarketWatchUITests/Pods-MarketWatch-MarketWatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8AF6CE65918E32064861432 /* Pods-MarketWatch-MarketWatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketWatch-MarketWatchUITests.release.xcconfig"; path = "Target Support Files/Pods-MarketWatch-MarketWatchUITests/Pods-MarketWatch-MarketWatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E349F31FD4FB5C2532F1A471 /* Pods-MarketWatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketWatchTests.release.xcconfig"; path = "Target Support Files/Pods-MarketWatchTests/Pods-MarketWatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		F04291D0EBED2ECD60DB64EF /* Pods_MarketWatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketWatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FBAB26A25EA630600BA6422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBAB2BA25EA65C500BA6422 /* Alamofire in Frameworks */,
+				33501418CB1315F6C723FA2D /* Pods_MarketWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBAB28325EA630700BA6422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE63F9D7D158A66530C7E8AC /* Pods_MarketWatchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBAB28E25EA630700BA6422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA658210C412F8BC1060076 /* Pods_MarketWatch_MarketWatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F89B3F525EB8082009D3064 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				5F89B3F625EB80A7009D3064 /* WatchListTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		5F89B41725EBF4A5009D3064 /* MarketWatchResponse */ = {
+			isa = PBXGroup;
+			children = (
+				5F89B41A25EBF4CB009D3064 /* MarketWatchMarketSummaryAndSparkResponse.swift */,
+				5F89B41B25EBF4CB009D3064 /* MarketWatchRegularMarketPreviousClose.swift */,
+				5F89B41C25EBF4CB009D3064 /* MarketWatchRegularMarketTime.swift */,
+				5F89B41925EBF4CB009D3064 /* MarketWatchResponse.swift */,
+				5F89B41D25EBF4CB009D3064 /* MarketWatchResult.swift */,
+				5F89B41825EBF4CB009D3064 /* MarketWatchSpark.swift */,
+			);
+			path = MarketWatchResponse;
+			sourceTree = "<group>";
+		};
+		5FBAB26425EA630600BA6422 = {
+			isa = PBXGroup;
+			children = (
+				5FBAB26F25EA630600BA6422 /* MarketWatch */,
+				5FBAB28925EA630700BA6422 /* MarketWatchTests */,
+				5FBAB29425EA630700BA6422 /* MarketWatchUITests */,
+				5FBAB26E25EA630600BA6422 /* Products */,
+				D39D0434F9C3B22F325954C1 /* Pods */,
+				85E1B432CB921C486D6E1D43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5FBAB26E25EA630600BA6422 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB26D25EA630600BA6422 /* MarketWatch.app */,
+				5FBAB28625EA630700BA6422 /* MarketWatchTests.xctest */,
+				5FBAB29125EA630700BA6422 /* MarketWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FBAB26F25EA630600BA6422 /* MarketWatch */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB2A625EA634D00BA6422 /* AppDelegate */,
+				5FBAB2AB25EA63A700BA6422 /* APIClient */,
+				5FBAB2A725EA635A00BA6422 /* Controllers */,
+				5FBAB28125EA630700BA6422 /* Info.plist */,
+				5F89B3F525EB8082009D3064 /* CustomCells */,
+				5FBAB2AD25EA640200BA6422 /* Assets */,
+				5FBAB2AC25EA63D800BA6422 /* HelperClass */,
+				5FBAB2A825EA636600BA6422 /* Views */,
+				5FBAB2AA25EA638E00BA6422 /* Model */,
+				5FBAB2A925EA637000BA6422 /* Extensions */,
+			);
+			path = MarketWatch;
+			sourceTree = "<group>";
+		};
+		5FBAB28925EA630700BA6422 /* MarketWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB28A25EA630700BA6422 /* MarketWatchTests.swift */,
+				5FBAB28C25EA630700BA6422 /* Info.plist */,
+			);
+			path = MarketWatchTests;
+			sourceTree = "<group>";
+		};
+		5FBAB29425EA630700BA6422 /* MarketWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB29525EA630700BA6422 /* MarketWatchUITests.swift */,
+				5FBAB29725EA630700BA6422 /* Info.plist */,
+			);
+			path = MarketWatchUITests;
+			sourceTree = "<group>";
+		};
+		5FBAB2A625EA634D00BA6422 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB27025EA630600BA6422 /* AppDelegate.swift */,
+				5FBAB27225EA630600BA6422 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5FBAB2A725EA635A00BA6422 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F89B40025EBA997009D3064 /* BaseViewController.swift */,
+				5FBAB27425EA630600BA6422 /* WatchlistController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5FBAB2A825EA636600BA6422 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB27625EA630600BA6422 /* Main.storyboard */,
+				5FBAB27E25EA630700BA6422 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FBAB2A925EA637000BA6422 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB2C425EA6B5A00BA6422 /* UIColor.swift */,
+				5F89B3FB25EB82DA009D3064 /* UILabel.swift */,
+				5F8372A725ECC833008E6C8C /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5FBAB2AA25EA638E00BA6422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F89B41725EBF4A5009D3064 /* MarketWatchResponse */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FBAB2AB25EA63A700BA6422 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB2AE25EA644000BA6422 /* Enums.swift */,
+				5FBAB2B325EA649E00BA6422 /* MWAPIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		5FBAB2AC25EA63D800BA6422 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				5F89B40525EBAA36009D3064 /* Constants.swift */,
+				5F8372AF25ECE495008E6C8C /* CommonFunctions.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		5FBAB2AD25EA640200BA6422 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5FBAB27C25EA630700BA6422 /* Assets.xcassets */,
+				5FBAB27925EA630600BA6422 /* MarketWatch.xcdatamodeld */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		85E1B432CB921C486D6E1D43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1401ABF2DFA5EA190A89A473 /* Pods_MarketWatch.framework */,
+				85621684B8399A5B644DC383 /* Pods_MarketWatch_MarketWatchUITests.framework */,
+				F04291D0EBED2ECD60DB64EF /* Pods_MarketWatchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D39D0434F9C3B22F325954C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40B211437BFCA695E5D9C2CE /* Pods-MarketWatch.debug.xcconfig */,
+				28D813B72435574FFFFD3DBB /* Pods-MarketWatch.release.xcconfig */,
+				936A90421F9470DC893F2F75 /* Pods-MarketWatch-MarketWatchUITests.debug.xcconfig */,
+				A8AF6CE65918E32064861432 /* Pods-MarketWatch-MarketWatchUITests.release.xcconfig */,
+				8EF288FFC371FD27B81A1011 /* Pods-MarketWatchTests.debug.xcconfig */,
+				E349F31FD4FB5C2532F1A471 /* Pods-MarketWatchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FBAB26C25EA630600BA6422 /* MarketWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FBAB29A25EA630700BA6422 /* Build configuration list for PBXNativeTarget "MarketWatch" */;
+			buildPhases = (
+				41D87AD706BDC8DD5ED19A13 /* [CP] Check Pods Manifest.lock */,
+				5FBAB26925EA630600BA6422 /* Sources */,
+				5FBAB26A25EA630600BA6422 /* Frameworks */,
+				5FBAB26B25EA630600BA6422 /* Resources */,
+				60C8485FD0DFCA387080FA9D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketWatch;
+			packageProductDependencies = (
+				5FBAB2B925EA65C500BA6422 /* Alamofire */,
+			);
+			productName = MarketWatch;
+			productReference = 5FBAB26D25EA630600BA6422 /* MarketWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FBAB28525EA630700BA6422 /* MarketWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FBAB29D25EA630700BA6422 /* Build configuration list for PBXNativeTarget "MarketWatchTests" */;
+			buildPhases = (
+				504814C6206C54000CCC1A68 /* [CP] Check Pods Manifest.lock */,
+				5FBAB28225EA630700BA6422 /* Sources */,
+				5FBAB28325EA630700BA6422 /* Frameworks */,
+				5FBAB28425EA630700BA6422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FBAB28825EA630700BA6422 /* PBXTargetDependency */,
+			);
+			name = MarketWatchTests;
+			productName = MarketWatchTests;
+			productReference = 5FBAB28625EA630700BA6422 /* MarketWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FBAB29025EA630700BA6422 /* MarketWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FBAB2A025EA630700BA6422 /* Build configuration list for PBXNativeTarget "MarketWatchUITests" */;
+			buildPhases = (
+				F1797C1AE1D13702C4797ADC /* [CP] Check Pods Manifest.lock */,
+				5FBAB28D25EA630700BA6422 /* Sources */,
+				5FBAB28E25EA630700BA6422 /* Frameworks */,
+				5FBAB28F25EA630700BA6422 /* Resources */,
+				9D499A4097171DD806A84E2F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FBAB29325EA630700BA6422 /* PBXTargetDependency */,
+			);
+			name = MarketWatchUITests;
+			productName = MarketWatchUITests;
+			productReference = 5FBAB29125EA630700BA6422 /* MarketWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FBAB26525EA630600BA6422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5FBAB26C25EA630600BA6422 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5FBAB28525EA630700BA6422 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5FBAB26C25EA630600BA6422;
+					};
+					5FBAB29025EA630700BA6422 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5FBAB26C25EA630600BA6422;
+					};
+				};
+			};
+			buildConfigurationList = 5FBAB26825EA630600BA6422 /* Build configuration list for PBXProject "MarketWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FBAB26425EA630600BA6422;
+			packageReferences = (
+				5FBAB2B825EA65C500BA6422 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 5FBAB26E25EA630600BA6422 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FBAB26C25EA630600BA6422 /* MarketWatch */,
+				5FBAB28525EA630700BA6422 /* MarketWatchTests */,
+				5FBAB29025EA630700BA6422 /* MarketWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FBAB26B25EA630600BA6422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBAB28025EA630700BA6422 /* LaunchScreen.storyboard in Resources */,
+				5FBAB27D25EA630700BA6422 /* Assets.xcassets in Resources */,
+				5FBAB27825EA630600BA6422 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBAB28425EA630700BA6422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBAB28F25EA630700BA6422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41D87AD706BDC8DD5ED19A13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		504814C6206C54000CCC1A68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketWatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60C8485FD0DFCA387080FA9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketWatch/Pods-MarketWatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketWatch/Pods-MarketWatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketWatch/Pods-MarketWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D499A4097171DD806A84E2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketWatch-MarketWatchUITests/Pods-MarketWatch-MarketWatchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketWatch-MarketWatchUITests/Pods-MarketWatch-MarketWatchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketWatch-MarketWatchUITests/Pods-MarketWatch-MarketWatchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1797C1AE1D13702C4797ADC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketWatch-MarketWatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FBAB26925EA630600BA6422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBAB27525EA630600BA6422 /* WatchlistController.swift in Sources */,
+				5F89B42225EBF4CC009D3064 /* MarketWatchRegularMarketTime.swift in Sources */,
+				5F8372A825ECC833008E6C8C /* UIViewController.swift in Sources */,
+				5F89B42025EBF4CC009D3064 /* MarketWatchMarketSummaryAndSparkResponse.swift in Sources */,
+				5F89B42125EBF4CC009D3064 /* MarketWatchRegularMarketPreviousClose.swift in Sources */,
+				5F89B40625EBAA36009D3064 /* Constants.swift in Sources */,
+				5FBAB2C525EA6B5A00BA6422 /* UIColor.swift in Sources */,
+				5FBAB27125EA630600BA6422 /* AppDelegate.swift in Sources */,
+				5FBAB2AF25EA644000BA6422 /* Enums.swift in Sources */,
+				5F89B41E25EBF4CC009D3064 /* MarketWatchSpark.swift in Sources */,
+				5F89B3FC25EB82DA009D3064 /* UILabel.swift in Sources */,
+				5F89B40125EBA997009D3064 /* BaseViewController.swift in Sources */,
+				5FBAB27325EA630600BA6422 /* SceneDelegate.swift in Sources */,
+				5F8372B025ECE495008E6C8C /* CommonFunctions.swift in Sources */,
+				5F89B3F725EB80A7009D3064 /* WatchListTableViewCell.swift in Sources */,
+				5F89B42325EBF4CC009D3064 /* MarketWatchResult.swift in Sources */,
+				5FBAB27B25EA630600BA6422 /* MarketWatch.xcdatamodeld in Sources */,
+				5F89B41F25EBF4CC009D3064 /* MarketWatchResponse.swift in Sources */,
+				5FBAB2B425EA649E00BA6422 /* MWAPIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBAB28225EA630700BA6422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBAB28B25EA630700BA6422 /* MarketWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBAB28D25EA630700BA6422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBAB29625EA630700BA6422 /* MarketWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FBAB28825EA630700BA6422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FBAB26C25EA630600BA6422 /* MarketWatch */;
+			targetProxy = 5FBAB28725EA630700BA6422 /* PBXContainerItemProxy */;
+		};
+		5FBAB29325EA630700BA6422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FBAB26C25EA630600BA6422 /* MarketWatch */;
+			targetProxy = 5FBAB29225EA630700BA6422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FBAB27625EA630600BA6422 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FBAB27725EA630600BA6422 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FBAB27E25EA630700BA6422 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FBAB27F25EA630700BA6422 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FBAB29825EA630700BA6422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FBAB29925EA630700BA6422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FBAB29B25EA630700BA6422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B211437BFCA695E5D9C2CE /* Pods-MarketWatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarketWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shadowfax.MarketWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FBAB29C25EA630700BA6422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D813B72435574FFFFD3DBB /* Pods-MarketWatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarketWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shadowfax.MarketWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5FBAB29E25EA630700BA6422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF288FFC371FD27B81A1011 /* Pods-MarketWatchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarketWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shadowfax.MarketWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketWatch.app/MarketWatch";
+			};
+			name = Debug;
+		};
+		5FBAB29F25EA630700BA6422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E349F31FD4FB5C2532F1A471 /* Pods-MarketWatchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarketWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shadowfax.MarketWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketWatch.app/MarketWatch";
+			};
+			name = Release;
+		};
+		5FBAB2A125EA630700BA6422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936A90421F9470DC893F2F75 /* Pods-MarketWatch-MarketWatchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarketWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shadowfax.MarketWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarketWatch;
+			};
+			name = Debug;
+		};
+		5FBAB2A225EA630700BA6422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8AF6CE65918E32064861432 /* Pods-MarketWatch-MarketWatchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarketWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shadowfax.MarketWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarketWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FBAB26825EA630600BA6422 /* Build configuration list for PBXProject "MarketWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBAB29825EA630700BA6422 /* Debug */,
+				5FBAB29925EA630700BA6422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FBAB29A25EA630700BA6422 /* Build configuration list for PBXNativeTarget "MarketWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBAB29B25EA630700BA6422 /* Debug */,
+				5FBAB29C25EA630700BA6422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FBAB29D25EA630700BA6422 /* Build configuration list for PBXNativeTarget "MarketWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBAB29E25EA630700BA6422 /* Debug */,
+				5FBAB29F25EA630700BA6422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FBAB2A025EA630700BA6422 /* Build configuration list for PBXNativeTarget "MarketWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBAB2A125EA630700BA6422 /* Debug */,
+				5FBAB2A225EA630700BA6422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FBAB2B825EA65C500BA6422 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FBAB2B925EA65C500BA6422 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FBAB2B825EA65C500BA6422 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5FBAB27925EA630600BA6422 /* MarketWatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FBAB27A25EA630600BA6422 /* MarketWatch.xcdatamodel */,
+			);
+			currentVersion = 5FBAB27A25EA630600BA6422 /* MarketWatch.xcdatamodel */;
+			path = MarketWatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5FBAB26525EA630600BA6422 /* Project object */;
+}
